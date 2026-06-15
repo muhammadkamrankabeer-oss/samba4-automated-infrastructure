@@ -105,6 +105,54 @@ samba4-enterprise-identity-suite/
 
 ---
 
+## 🎯 Business Outcomes
+
+This project demonstrates how open-source technologies can provide enterprise identity and access management capabilities traditionally associated with commercial Active Directory environments.
+
+Key outcomes include:
+
+* Centralized identity management for Linux systems
+* Automated Active Directory deployment using Infrastructure as Code
+* Kerberos-based secure authentication
+* Automated Linux domain joining and account management
+* Reduced manual administration through Ansible automation
+* Monitoring and operational visibility using Cockpit
+* Repeatable and idempotent infrastructure deployment
+---
+## 🛠 Challenges Solved
+
+### Challenge
+
+Managing user accounts individually across Linux systems creates operational overhead, inconsistent access controls, and increased security risks.
+
+### Solution
+
+This platform centralizes authentication and identity management using Samba4 Active Directory while automating deployment and configuration through Ansible.
+
+### Benefits
+
+* Single source of truth for user identities
+* Consistent authentication across systems
+* Reduced manual configuration effort
+* Improved operational efficiency
+* Repeatable deployments using Infrastructure as Code
+---
+
+## 📈 Project Metrics
+
+| Metric                    | Value                   |
+| ------------------------- | ----------------------- |
+| Ansible Playbooks         | 10                      |
+| Ansible Roles             | 5                       |
+| Domain Controllers        | 1                       |
+| Linux Clients             | Multiple                |
+| Authentication Method     | Kerberos                |
+| Identity Platform         | Samba4 Active Directory |
+| Monitoring Solution       | Cockpit                 |
+| Infrastructure Automation | Ansible                 |
+| Deployment Platform       | Vagrant                 |
+
+---
 ## 🚀 Core Features
 
 | Feature | Description |
@@ -186,7 +234,7 @@ ansible-playbook -i ansible/inventories/lab/hosts.ini ansible/playbooks/join_and
 
 **Idempotent Playbook Run**
 
-![Idempotent Playbook](docs/screenshots/idempotent-playbook.png.png)
+![Idempotent Playbook](docs/screenshots/idempotent-playbook.png)
 
 **Cockpit Playbook Execution**
 
